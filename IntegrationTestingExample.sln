@@ -1,11 +1,18 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMvcApplication.Tests", "MyMvcApplication.Tests\MyMvcApplication.Tests.csproj", "{337FEBC1-F001-444B-BF72-A4380F5EA658}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcIntegrationTestFramework", "MvcIntegrationTestFramework\MvcIntegrationTestFramework.csproj", "{4036AFF9-698B-463D-BE26-05D2CE3E2ABD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMvcApplication", "MyMvcApplication\MyMvcApplication.csproj", "{3030D25F-8893-48CA-8C78-75869356DA68}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{4CF0E49E-6EF0-4BA9-8C7A-7989664FE1C6}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.config = .nuget\NuGet.config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
