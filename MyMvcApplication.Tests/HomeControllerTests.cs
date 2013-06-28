@@ -1,16 +1,16 @@
 ﻿using System.Web.Mvc;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MvcIntegrationTestFramework.Browsing;
 using MvcIntegrationTestFramework.Hosting;
-using NUnit.Framework;
 
 namespace MyMvcApplication.Tests
 {
-	[TestFixture]
+	[TestClass]
 	public class HomeControllerTests
 	{
 		private AppHost appHost;
 
-		[TestFixtureSetUp]
+		[TestInitialize]
 		public void TestFixtureSetUp()
 		{
             //If you MVC project is not in the root of your solution directory then include the path
@@ -18,7 +18,7 @@ namespace MyMvcApplication.Tests
 			appHost = AppHost.Simulate("MyMvcApplication");
 		}
 
-		[Test]
+		[TestMethod]
 		public void Root_Url_Renders_Index_View()
 		{
 			appHost.Start(browsingSession =>
@@ -36,7 +36,7 @@ namespace MyMvcApplication.Tests
 			});
 		}
 
-		[Test]
+        [TestMethod]
 		public void WorkWithCookiesAndSession()
 		{
 			appHost.Start(browsingSession =>
@@ -59,7 +59,7 @@ namespace MyMvcApplication.Tests
 			});
 		}
 
-		[Test]
+        [TestMethod]
 		public void LogInProcess()
 		{
 			string securedActionUrl = "/home/SecretAction";
